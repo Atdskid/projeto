@@ -1,0 +1,78 @@
+body {
+    color: hsl(0, 98%, 47%);
+    background: rgba(253, 253, 253, 0.952);
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 2px hsl(0, 0%, 0%);
+    padding: 20px;
+    font-size: 32px;
+    color: hsl(0, 100%, 50%);
+    text-align: center; /* Centraliza o texto do cabeçalho */
+}
+
+.chamada {
+    background: rgb(255, 255, 255);
+    padding: 80px 0; /* Mantém o espaçamento superior e inferior uniforme */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    text-align: center; /* Centraliza o texto na chamada */
+}
+
+.chamada-texto {
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0; /* Remove margem padrão para h1 */
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0; /* Espaçamento vertical uniforme para o parágrafo */
+}
+
+.categoria {
+    padding: 0 20px; /* Remove o padding superior para um visual mais limpo */
+    margin-top: 50px;
+}
+
+.categoria h2 {
+    color: rgb(255, 255, 255);
+    text-align: center; /* Centraliza o título da categoria */
+    font-size: 28px; /* Tamanho de fonte maior para destaque */
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    gap: 10px;
+    padding: 10px; /* Adiciona espaçamento ao redor dos vídeos */
+}
+
+.categoria-videos iframe {
+    border: none; /* Remove bordas dos iframes */
+    border-radius: 5px; /* Bordas arredondadas nos vídeos */
+    transition: transform 0.2s; /* Adiciona animação suave */
+}
+
+.categoria-videos iframe:hover {
+    transform: scale(1.05); /* Aumenta levemente o vídeo ao passar o mouse */
+}
+
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+    transition: opacity 0.2s; /* Animação suave para a opacidade */
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid green; /* Borda verde ao passar o mouse */
+}
